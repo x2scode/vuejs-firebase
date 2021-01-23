@@ -1,6 +1,6 @@
 <template>
   <div>
-    <admin-navbar>
+    <admin-sidebar>
       <template #title>
         <span>Categories Page</span>
       </template>
@@ -12,7 +12,7 @@
           <span uk-icon="plus-circle"></span> Add
         </button>
       </template>
-    </admin-navbar>
+    </admin-sidebar>
 
     <!----------------------- Add Category modal ---------------------->
     <div id="addCategory" uk-modal>
@@ -134,11 +134,11 @@
 </template>
 
 <script>
-import AdminNavbar from "@/components/Admin/AdminNavbar.vue";
+import AdminSidebar from '@/components/Admin/AdminSidebar.vue';
 
 export default {
   components: {
-    AdminNavbar,
+    AdminSidebar,
   },
   data() {
     return {

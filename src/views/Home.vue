@@ -5,7 +5,7 @@
 
         <div class="uk-flex uk-flex-center uk-margin-top">
           <div class="uk-alert-warning" uk-alert>
-              <p>Due to the use of firebase, you must use a proxy change</p>
+              <p>Due to the use of firebase, you must use a VPN</p>
           </div>
         </div>
         <div class="uk-flex uk-flex-center uk-margin-small">

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <admin-navbar>
+    <admin-sidebar>
       <template #title>
         <span>Products Page</span>
       </template>
@@ -13,7 +13,7 @@
           <span uk-icon="plus-circle"></span> Add
         </button>
       </template>
-    </admin-navbar>
+    </admin-sidebar>
 
     <!----------------------- Add & Edit Products modal ---------------------->
     <div id="addProducts" uk-modal>
@@ -144,7 +144,7 @@
 </template>
 
 <script>
-import AdminNavbar from "@/components/Admin/AdminNavbar.vue";
+import AdminSidebar from "@/components/Admin/AdminSidebar.vue";
 import {createNamespacedHelpers} from 'vuex';
 const {mapState, mapActions} = createNamespacedHelpers('Admin/ProductsModule/');
 const initForm = ()=>({
@@ -154,7 +154,7 @@ const initForm = ()=>({
 
 export default {
   components: {
-      AdminNavbar,
+      AdminSidebar,
     },
     data() {
       return {

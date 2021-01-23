@@ -1,14 +1,21 @@
 <template>
   <div>
         <div>
-          <a 
-            class="uk-icon-button uk-margin-small-left uk-margin-small-top" 
-            uk-toggle="target: #sideNav"
-          >
-          <span uk-icon="menu"></span>
-          </a>
-          <admin-sidebar></admin-sidebar>
-       </div>
+          <admin-sidebar>
+            <template #title>Admin</template>
+            <template #sidebar>
+              <a 
+                class="uk-icon-button uk-margin-small-leftp" 
+                uk-toggle="target: #sideNav"
+                >
+                <span uk-icon="menu"></span>
+              </a>
+            </template>
+            <template #action>
+                <router-link class="uk-link-heading" to="/" uk-icon="sign-out">Sign out</router-link>
+            </template>
+          </admin-sidebar>
+        </div>
       <router-view/>
   </div>
 </template>
