@@ -98,8 +98,9 @@
   <!------------------------- lists -------------------------------->
     <div class="uk-section uk-section-primary uk-light">
       <div class="uk-container">
-        <h2>Products</h2>
-        <div v-if="products" class="uk-flex uk-flex-center uk-flex-wrap">
+        <h4>Products</h4>
+        <div v-if="products" class="uk-flex uk-flex-center uk-flex-wrap"
+          uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
           <!--------------- one Card ----------------------->
           <div
           v-for="product in products" :key="product.id"

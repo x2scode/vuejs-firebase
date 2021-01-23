@@ -3,15 +3,21 @@
     <div>
     <!-- Navbar section ----------------------------->
         <nav class="uk-navbar uk-navbar-container">
-            <div class="uk-navbar-left uk-dark uk-background-muted ">
+            <div class="uk-navbar-left uk-dark uk-background-muted">
                 <div class="uk-navbar-item">
-                    <!-- Slot Title of navbar -->
+                    <!-- Slot Sidebar of navbar -->
                     <slot name="sidebar"></slot>
                 </div>
                 <div class="uk-navbar-item">
                     <!-- Slot Title of navbar -->
                     <slot name="title">
                     </slot>
+                </div>
+            </div>
+            <div class="uk-navbar-center uk-dark uk-background-muted">
+                <div class="uk-navbar-item">
+                    <!-- Slot Sidebar of navbar -->
+                    <slot name="search"></slot>
                 </div>
             </div>
             <div class="uk-navbar-right">

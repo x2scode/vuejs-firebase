@@ -96,7 +96,8 @@
     <div class="uk-section uk-section-primary uk-light">
       <div class="uk-container">
         <h4>Categories</h4>
-        <div v-if="categories" class="uk-flex uk-flex-center uk-flex-wrap">
+        <div v-if="categories" class="uk-flex uk-flex-center uk-flex-wrap"
+          uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
           <div 
           class="uk-card uk-card-default uk-width-1-4@m uk-border-rounded uk-margin-right uk-margin-bottom" 
           v-for="category in categories" :key="category.id">
